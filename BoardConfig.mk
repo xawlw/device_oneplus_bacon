@@ -94,6 +94,9 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
+#DUP
+BUILD_BROKEN_DUP_RULES := true
+
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
