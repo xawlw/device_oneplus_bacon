@@ -97,6 +97,9 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 #DUP
 BUILD_BROKEN_DUP_RULES := true
 
+#PHONY
+BUILD_BROKEN_PHONY_TARGETS := true
+
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
